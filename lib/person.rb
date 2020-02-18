@@ -1,15 +1,9 @@
 class Person
-  def initialize(name)
-    @name = name
-    @job = Time.now
-   end
+  attr_accessor :name
+  attr_reader :age
   
-   def name
+  def initialize(name, age)
     @name = name
-   end
-  
-   def job
-    @job = job
+    @age = age
   end
-  
- end
+end
